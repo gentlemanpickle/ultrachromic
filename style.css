@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/base.css");
+
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fixes.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/jf_font.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/accentlist.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/type/colorful.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/progress/floating.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/fields/fields_border.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/rounding_circlehover.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/login/login_minimalistic.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/header/header_transparent.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/titlepage/title_simple-logo.css");
+@import url("https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/cornerindicator/indicator_floating.css");
+
+:root {
+    --rounding: 5px;
+}
+
+:root {
+    --accent: 98, 121, 205;
+}
+
+#loginPage {
+    background: url("https://i.imgur.com/9vL4iNf.png") !important;
+}
+
+.pageTitleWithLogo.pageTitleWithDefaultLogo {
+    background-image: url("images/icon.png");
+}
+
+.backdropImage {
+    filter: blur(20px) saturate(120%) contrast(120%) brightness(20%);
+}
+
+.material-icons.chevron_right {
+    display: none;
+}
+
+.itemSelectionPanel {
+    background: none;
+}
+
+.itemSelectionPanel .checkboxOutline.multiSelectCheckboxOutline {
+    margin: 0.5em;
+}
+
+.navMenuOption-selected,
+.selectionCommandsPanel {
+    background: rgba(var(--accent), 1) !important;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox + span + .checkboxOutline {
+    border: 0.2em solid rgba(var(--selection), 0.8) !important;
+}
+
+.cardBox.withMultiSelect .cardScalable {
+    border: 0.2em solid rgba(var(--selection), 0.8) !important;
+    border-radius: var(--rounding) !important;
+}
+
+.cardBox.withMultiSelect .cardScalable::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    content: "";
+    z-index: 1;
+}
+
+.cardBox.withMultiSelect .itemSelectionPanel {
+    border: 0em solid rgba(var(--selection), 0.8) !important;
+}
+
+.cardBox.withMultiSelect .itemSelectionPanel .checkboxOutline.multiSelectCheckboxOutline {
+    margin: 0.5em;
+}
+
+#itemDetailPage .detailLogo {
+    margin-top: 12vh;
+}
+
+#itemDetailPage .detailRibbon .nameContainer .itemName {
+    padding: 0em;
+}
+
+#itemDetailPage #childrenContent .listItemImage {
+    background-size: contain;
+}
